@@ -47,11 +47,12 @@ export const projects: Project[] = [
   // Restauranter
   {
     id: "restaurant-1",
-    title: "Sjøbris Restaurant",
-    description: "Elegant nettside for en sjømatrestaurant med online bestilling, meny-visning og bordreservasjon.",
+    title: "Gobiten",
+    description: "Moderne restaurant-nettside med menyoversikt, online bestilling og stilrent design.",
     category: "restauranter",
-    image: "/projects/restaurant-1.jpg",
-    tags: ["Next.js", "Reservasjon", "Meny"],
+    image: "/gobiten.jpg",
+    tags: ["Next.js", "Bestilling", "Meny"],
+    url: "https://gobiten.vercel.app/",
   },
   {
     id: "restaurant-2",
