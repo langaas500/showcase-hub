@@ -33,6 +33,14 @@ export const categories = [
       { id: "rorlegger", title: "Rørlegger", icon: "🔧", description: "VVS-arbeid, bad og vanninstallasjoner" },
     ],
   },
+  {
+    id: "bryllup",
+    title: "Bryllup",
+    description: "Nettsider for bryllup, bryllupsplanlegging og bryllupsfotografer",
+    icon: "💍",
+    gradient: "from-pink-500 to-rose-600",
+    count: 1,
+  },
 ];
 
 export const projects: Project[] = [

@@ -24,6 +24,9 @@ export default function Navbar() {
           <Link href="/handverker" className="text-sm text-muted transition-colors hover:text-foreground">
             Håndverker
           </Link>
+          <Link href="/bryllup" className="text-sm text-muted transition-colors hover:text-foreground">
+            Bryllup
+          </Link>
           <Link
             href="/kontakt"
             className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
@@ -56,6 +59,9 @@ export default function Navbar() {
             </Link>
             <Link href="/handverker" onClick={() => setMobileOpen(false)} className="text-sm text-muted hover:text-foreground">
               Håndverker
+            </Link>
+            <Link href="/bryllup" onClick={() => setMobileOpen(false)} className="text-sm text-muted hover:text-foreground">
+              Bryllup
             </Link>
             <Link
               href="/kontakt"
