@@ -6,7 +6,7 @@ export const metadata = createMetadata({
   description:
     "Snekker i Mysen og Indre Østfold. Kjøkken, garderobe, møbler og innredning på mål.",
   path: "/handverker/snekker",
-  image: "/snekker-hero.jpg",
+  image: "/showcase-snekker.jpg",
   imageAlt: "Snekker – SBL Showcase",
 });
 
