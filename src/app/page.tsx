@@ -1,5 +1,13 @@
 import CategoryCard from "@/components/CategoryCard";
 import { categories } from "@/data/projects";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata = createMetadata({
+  title: "SBL Showcase | Prosjekter",
+  description:
+    "Utforsk vårt utvalg av nettsider og digitale løsninger. Fra restauranter og fastfood til håndverkere – skreddersydde løsninger.",
+  path: "/",
+});
 
 export default function Home() {
   return (

@@ -2,18 +2,33 @@ import ProjectCard from "@/components/ProjectCard";
 import { categories, getProjectsBySubcategory } from "@/data/projects";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { createMetadata } from "@/lib/metadata";
 
 const handverker = categories.find((c) => c.id === "handverker");
 const subcategories = handverker?.subcategories ?? [];
+
+const fagImages: Record<string, string> = {
+  snekker: "/snekker-hero.jpg",
+  elektriker: "/elektro-hero.jpg",
+  tomrer: "/snekker-hero.jpg",
+  ventilasjon: "/ventilasjon-hero.jpg",
+  rorlegger: "/rorlegger-hero.jpg",
+};
 
 export function generateStaticParams() {
   return subcategories.map((sub) => ({ fag: sub.id }));
 }
 
-export function generateMetadata({ params }: { params: Promise<{ fag: string }> }) {
-  return params.then(({ fag }) => {
-    const sub = subcategories.find((s) => s.id === fag);
-    return { title: sub ? `${sub.title} | SBL Showcase` : "Ikke funnet" };
+export async function generateMetadata({ params }: { params: Promise<{ fag: string }> }) {
+  const { fag } = await params;
+  const sub = subcategories.find((s) => s.id === fag);
+  if (!sub) return { title: "Ikke funnet" };
+  return createMetadata({
+    title: sub.title,
+    description: sub.description,
+    path: `/handverker/${fag}`,
+    image: fagImages[fag],
+    imageAlt: `${sub.title} – SBL Showcase`,
   });
 }
 

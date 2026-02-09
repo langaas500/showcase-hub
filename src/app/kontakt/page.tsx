@@ -1,8 +1,12 @@
 import Link from "next/link";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "Kontakt | SBL Showcase",
-};
+export const metadata = createMetadata({
+  title: "Kontakt",
+  description:
+    "Ta kontakt med SBL Prosjekter for nettsider og digitale løsninger.",
+  path: "/kontakt",
+});
 
 export default function KontaktPage() {
   return (

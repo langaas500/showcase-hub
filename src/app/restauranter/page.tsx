@@ -1,10 +1,14 @@
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectsByCategory } from "@/data/projects";
 import Link from "next/link";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "Restauranter & Fastfood | SBL Showcase",
-};
+export const metadata = createMetadata({
+  title: "Restauranter & Fastfood",
+  description:
+    "Nettsider og digitale løsninger for restauranter, kafeer og fastfood-kjeder.",
+  path: "/restauranter",
+});
 
 export default function RestauranterPage() {
   const projects = getProjectsByCategory("restauranter");

@@ -1,8 +1,12 @@
 import Link from "next/link";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createMetadata({
   title: "Emmelin & Martin – 16. august 2025",
-};
+  description:
+    "Bryllupsside for Emmelin og Martin. Program, veibeskrivelse, bildedeling og album.",
+  path: "/bryllup",
+});
 
 export default function BryllupHome() {
   return (

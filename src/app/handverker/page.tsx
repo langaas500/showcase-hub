@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { categories } from "@/data/projects";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata = {
-  title: "Håndverker | SBL Showcase",
-};
+export const metadata = createMetadata({
+  title: "Håndverker",
+  description:
+    "Profesjonelle nettsider for håndverkere i ulike fag – snekker, elektriker, tømrer, ventilasjon og rørlegger.",
+  path: "/handverker",
+});
 
 export default function HandverkerPage() {
   const handverker = categories.find((c) => c.id === "handverker");

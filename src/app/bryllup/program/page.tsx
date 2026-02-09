@@ -1,6 +1,11 @@
-export const metadata = {
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata = createMetadata({
   title: "Program – Emmelin & Martin",
-};
+  description:
+    "Dagens program for bryllupet til Emmelin og Martin, 16. august 2025.",
+  path: "/bryllup/program",
+});
 
 const program = [
   { time: "13:45", title: "Ankomst", description: "Gjestene ankommer Herregården Gjestegård. Velkommen med et glass musserende i hagen." },

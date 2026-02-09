@@ -1,6 +1,11 @@
-export const metadata = {
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata = createMetadata({
   title: "Veibeskrivelse – Emmelin & Martin",
-};
+  description:
+    "Veibeskrivelse til Herregården Gjestegård for bryllupet til Emmelin og Martin.",
+  path: "/bryllup/veibeskrivelse",
+});
 
 export default function VeibeskrivelsePage() {
   return (
