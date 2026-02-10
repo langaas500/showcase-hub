@@ -137,7 +137,7 @@ export default function RengjoringsPage() {
       {/* Hero */}
       <section id="hjem" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 overflow-hidden">
         <Image
-          src="/showcase-vask.jpg"
+          src="/vask-hero.jpg"
           alt="Profesjonell rengjøring"
           fill
           priority
