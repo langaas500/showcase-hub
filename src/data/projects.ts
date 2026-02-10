@@ -70,7 +70,7 @@ export const projects: Project[] = [
     title: "Diner 22",
     description: "Retro foodtruck-nettside med neon-design, burgermeny og rask bestilling.",
     category: "restauranter",
-    image: "/projects/restaurant-2.jpg",
+    image: "/diner22-thumbnail.jpg",
     tags: ["Next.js", "Meny", "Bestilling"],
     url: "https://diner22-dlof.vercel.app/",
   },
