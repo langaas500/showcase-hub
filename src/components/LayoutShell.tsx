@@ -10,6 +10,7 @@ const demoRoutes = [
   "/handverker/tomrer",
   "/handverker/ventilasjon",
   "/handverker/rorlegger",
+  "/diverse/rengjoring",
 ];
 
 function isDemo(pathname: string) {

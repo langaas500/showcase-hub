@@ -41,6 +41,17 @@ export const categories = [
     gradient: "from-pink-500 to-rose-600",
     count: 1,
   },
+  {
+    id: "diverse",
+    title: "Diverse",
+    description: "Nettsider for ulike bransjer og tjenester",
+    icon: "✨",
+    gradient: "from-emerald-500 to-teal-600",
+    count: 1,
+    subcategories: [
+      { id: "rengjoring", title: "Rengjøring", icon: "🧹", description: "Rengjøringstjenester for privat og bedrift" },
+    ],
+  },
 ];
 
 export const projects: Project[] = [
@@ -177,6 +188,17 @@ export const projects: Project[] = [
     subcategory: "rorlegger",
     image: "/projects/rorlegger-2.jpg",
     tags: ["Inspirasjon", "Budsjett", "Tidslinje"],
+  },
+
+  // Diverse – Rengjøring
+  {
+    id: "rengjoring-1",
+    title: "Østfold Renhold",
+    description: "Profesjonell rengjøringsfirma-nettside med tjenesteoversikt, prisforespørsel og online booking.",
+    category: "diverse",
+    subcategory: "rengjoring",
+    image: "/projects/rengjoring-1.jpg",
+    tags: ["Booking", "Prisforespørsel", "Responsiv"],
   },
 ];
 
