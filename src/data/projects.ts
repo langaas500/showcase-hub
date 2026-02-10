@@ -67,11 +67,12 @@ export const projects: Project[] = [
   },
   {
     id: "restaurant-2",
-    title: "Pizza Express",
-    description: "Moderne fastfood-nettside med hurtig online bestilling, leveringssporing og lojalitetsprogram.",
+    title: "Diner 22",
+    description: "Retro foodtruck-nettside med neon-design, burgermeny og rask bestilling.",
     category: "restauranter",
     image: "/projects/restaurant-2.jpg",
-    tags: ["React", "Bestilling", "Levering"],
+    tags: ["Next.js", "Meny", "Bestilling"],
+    url: "https://diner22-dlof.vercel.app/",
   },
   {
     id: "restaurant-3",
